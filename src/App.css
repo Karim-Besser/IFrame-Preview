@@ -2,19 +2,32 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #00b18b;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* .main {
+    background: rgba( 0, 255, 162, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 600px;
+} */
+
+.top_iframe_logo {
+  background-color: gray;
+  color: beige;
+  border-radius: 5px;
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,15 +37,70 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.main {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 600px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.url_input {
+  border: none;
+  border-radius: 5px;
+  padding: 4px;
+  background-color: rgb(49, 49, 49);
+  color: #f2f9f7;
+}
+
+.url_input::placeholder {
+  color: #666667;
+  border: none;
+}
+
+.url_input:focus {
+  outline: none;
+}
+
+.preview_btn {
+  background: #000000;
+  border-radius: 5px;
+  border: none;
+  gap: 3vh;
+  padding: 2px;
+  color: #ffffff;
+}
+
+.preview_btn:hover {
+  background: #ffffff;
+  color: #454545;
+  cursor: pointer;
+}
+.input {
+  padding: 2px;
+}
+
+.iframe iframe {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  /* border-radius: 10px; */
+  border: none;
+  /* border-radius: 0.5rem; */
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 100%;
+  position: absolute;
+  /* top: calc(50% - 250px); */
+  top: calc(50% - 250px);
+  height: calc(91% + 4px);
+  left: 0px;
+  bottom: 0px;
+  /* background: image(); here is the ? logo */
 }
